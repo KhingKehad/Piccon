@@ -1,0 +1,167 @@
+.nav {
+
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+        &-logo {
+            img {
+            height: 2.5rem;
+            }
+        }
+        &-list {
+            ul {
+                    // transform: translateX(0%);
+                list-style: none;    
+                li {
+                    display: inline;
+                    padding: 0 0.5rem;
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        padding: 0.8rem 1.6rem;
+                        transition: all 0.5s
+                    }
+                    a:hover {
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/////////////////////////////////////////////////
+/// //////////////////////////////////
+/// ////////////////////////////////////
+@media screen and (max-width: 1040px) {
+    .nav {
+
+        &__container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            &-list {
+                ul {
+                    // transform: translateX(0%);
+                    list-style: none;    
+                    li {
+                        display: inline;
+                        padding: 0 0.5rem;
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                            padding: 0.8rem 1.6rem;
+                            font-size: small;
+                        }
+                        a:hover {
+                            border-top: 1px solid black;
+                            border-bottom: 1px solid black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.nav__container-open {
+    display: none;
+    height: 2rem;
+    cursor: pointer;
+}
+.nav__container-close {
+    display: none;
+}
+.nav__container-close2 {
+    display: none;
+}
+.nav__container-close3-right {
+    display: none;
+    height: 2rem;
+    cursor: pointer;
+    // transition: all 010s;
+}
+@media screen and (max-width: 768px) {
+    .nav {
+        &__container {
+
+
+            &-list {
+
+
+                ul {
+                    transform: translateX(-100%);
+                    transition: all 0.5s;
+                    height: 100vh;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-color: #000;
+                    width: 100%;
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 100;
+                    li {
+                        padding: 0 0.5rem;
+                        margin: 3rem;
+                        a {
+                            color: #fff;
+                            border: 2px solid #fff;
+                            padding: 0.8rem 1.6rem;
+                        }
+                        a:hover {
+
+                        }
+                    }
+                }
+            }
+            &-open {
+                display: block;
+            }
+            &-open:hover,
+            &-open:active {
+                transform: translateY(-4px);
+                transition: all 0.5s;
+            }
+            &-close {
+                display: block;
+                z-index: 1000;
+            }
+            &-close3-right {
+                display: none;
+                z-index: 1000;
+                position: fixed;
+                top: 7%;
+                right: 10%;
+
+            }
+            &-close3-right:hover,
+            &-close3-right:active {
+                transform: translateY(-4px);
+                transition: all 0.5s;
+            }
+            &-close2 {
+                position: fixed;
+                // right: 0;
+                display: block;
+                z-index: 1000;
+            }
+        }
+    }
+}
+
+.nav--active { 
+  transform: translateX(0%) !important;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}

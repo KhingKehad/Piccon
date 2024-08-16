@@ -1,0 +1,258 @@
+.header {
+    // background-color: #ff0000;
+    padding: 4rem 0;
+
+    &__container {
+        // width: 80%;
+        margin: 0 auto;
+        // text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+
+        &-text {
+            text-align: center;
+            padding: 0.5rem 0;
+            font-size: 3.75rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 5.71875rem; /* 152.5% */
+            letter-spacing: -0.15rem;
+
+            width: 50%;
+
+            span:nth-last-of-type(3) {
+                background: #8C43EC;
+                border-radius: 0.5rem;
+                padding: 0 10px;
+
+            }
+            span:nth-last-of-type(2) {
+                background: #F86D01;
+                border-radius: 0.5rem;
+                padding: 0 10px;
+            }
+            span:nth-last-of-type(1) {
+                background: #F86D01;
+                border-radius: 0.5rem;
+                padding: 0 10px;
+            }
+        }
+        &-paragraph {
+            color: #fff;
+            text-align: center;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.9375rem; /* 155% */
+            letter-spacing: -0.025rem;
+
+            width: 50%;
+
+        }
+        &-upload {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.5rem;
+            border: 1px solid #000;
+            // opacity: 0.5;
+            background: linear-gradient(180deg, rgba(238, 238, 238, 0.21) 0%, rgba(241, 241, 241, 0.21) 100%);
+            backdrop-filter: blur(61px);
+            padding: 4rem 14rem;
+            margin-top:2rem;
+
+            &--text {
+                text-align: center;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.9375rem; /* 193.75% */
+                letter-spacing: -0.02rem;
+                margin-bottom: 0.5rem;
+            }
+
+            &--button {
+                margin-top: 1rem;
+                border: 1px solid rgba(0, 0, 0, 0.20);
+                background: rgba(0, 0, 0, 0.20);
+                transition: all 0.5s
+            }
+        }
+    }
+}
+@media screen and(max-width: 1024px) {
+    .header {
+        // background-color: #ff0000;
+        padding: 4rem 0;
+    
+        &__container {
+            // width: 80%;
+            margin: 0 auto;
+            // text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+    
+            &-text {
+                text-align: center;
+                padding: 0.2rem 0;
+                font-size: 3rem;
+
+                width: 60%;
+                
+            }
+            &-paragraph {
+                font-size: 1.2rem;  
+                width: 60%;         
+            }
+            &-upload {            
+                padding: 3rem 10rem;
+    
+                &--text {
+                    text-align: center;
+                    font-size: 1rem;
+                }
+    
+                &--button {
+                    margin-top: 1rem;
+                    font-size: small;
+                }
+            }
+        }
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        // background-color: #ff0000;
+        padding: 4rem 0;
+    
+        &__container {
+            // width: 80%;
+            margin: 0 auto;
+            // text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+    
+            &-text {
+                text-align: center;
+                padding: 0.2rem 0;
+                font-size: 3rem;
+                
+            }
+            &-paragraph {
+                font-size: 1.2rem;           
+            }
+            &-upload {            
+                padding: 3rem 7rem;
+    
+                &--text {
+                    text-align: center;
+                    font-size: 1rem;
+                }
+    
+                &--button {
+                    margin-top: 1rem;
+                    font-size: small;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        // background-color: #ff0000;
+        padding: 4rem 0;
+    
+        &__container {
+            // width: 80%;
+            margin: 0 auto;
+            // text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+    
+            &-text {
+                text-align: center;
+                padding: 0.0rem 0;
+                font-size: 2rem;
+                line-height: 1rem; /* 120% */
+                letter-spacing: 0.10rem;
+                line-height: normal;
+                letter-spacing: normal;
+
+                margin-bottom: 0.5rem;
+                width: 70%;
+            }
+            &-paragraph {
+                font-size: 1rem;
+                line-height: normal;
+                letter-spacing: normal;  
+                
+                width: 70%;
+                
+            }
+            &-upload {            
+                padding: 3rem 10rem;
+                padding: 3rem 5rem;
+
+    
+                &--text {
+                    text-align: center;
+                    font-size: 1rem;
+                }
+    
+                &--button {
+                    margin-top: 1rem;
+                    font-size: small;
+                }
+            }
+        }
+    } 
+}  
+
+@media screen and (max-width: 350px) {
+    .header {
+        // background-color: #ff0000;
+        padding: 4rem 0;
+    
+        &__container {
+    
+            &-text {
+                margin-bottom: 0.5rem;
+
+                width: 80%;
+            }
+            &-paragraph {         
+                width: 80%;
+            }
+            &-upload {            
+                padding: 3rem 2rem;
+
+    
+                &--text {
+                    text-align: center;
+                    font-size: 1rem;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    margin-bottom: 0.5rem;
+                }
+    
+                &--button {
+                    margin-top: 1rem;
+                    font-size: smaller;
+                    padding: 0.7rem !important;
+                }
+            }
+           
+        }
+    } 
+}   

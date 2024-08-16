@@ -1,0 +1,141 @@
+.story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 75%;
+
+        &---box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 0;
+
+            &--paragraph {
+                margin: 0 2rem;
+                color: #fff;
+                &-header {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    letter-spacing: -0.08rem;
+                    margin-bottom: 1rem;
+                }
+                &-text {
+                    color: #fff;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                
+            }
+            &--paragraph2 {
+                text-align: right;
+            }
+            &--imgCont {
+                margin: 0 2rem;
+
+                img {
+                    width: 27.63938rem;
+                    height: 27.23725rem;
+                    
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .story {
+        &__container {
+            width: 80%;
+            &---box {
+                &--paragraph {
+                    &-header {
+                        font-size: 1.8rem;
+
+                    }
+                    &-text {
+                        font-size: 0.9rem;
+                    }                
+                }
+                &--imgCont {
+                    img {
+                        width: 120%;
+                        height: 120%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .story {
+        &__container {
+            width: 90%;
+            &---box {
+                &--paragraph {
+                margin: 0 1rem;
+                    width: 90%;
+
+                    &-header {
+                        font-size: 1.5rem;
+
+                    }
+                    &-text {
+                        font-size: 0.9rem;
+                    }                
+                }
+                &--imgCont {
+                margin: 0 1rem;
+
+                    img {
+                        max-width: 20.63938rem;
+                    }
+                }
+                &--imgCont2 {
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .story {
+        &__container {
+            &---box {
+                flex-direction: column-reverse;
+                &--paragraph {
+
+                    &-header {
+                    }
+                    &-text {
+
+                    }                
+                }
+                &--imgCont {
+
+                    img {
+                        width: 80%;
+                        height: 80%;
+                    }
+                }
+                &--imgCont2 {
+                }
+            }
+            &---box2 {
+                flex-direction: column;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,198 @@
+.upload {
+    // background-color: green;
+    margin-bottom: 8rem;
+
+    &__container {
+        background-color: #F86D01;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: start;
+        // justify-content: space-between;
+        justify-content: space-around;
+        padding: 3rem 2rem;
+        border-radius: 0.5rem;
+        &---text {
+            width: 40%;
+            &--texthead {
+                color: #FFF;
+                font-size: 3.75rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 4.5rem; /* 120% */
+                letter-spacing: -0.15rem;
+            }
+            &--paragraph {
+                color: #FFF;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.9375rem; /* 155% */
+                letter-spacing: -0.025rem;
+                margin-top: 1rem;
+            }
+        }
+        &---shape {
+            // background-color: #ff0000;
+            // width: 60%;
+            text-align: center;
+
+            &--column {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 2rem;
+                &-box {
+                    // width: 22rem;
+                    // height: 25.25rem;
+                    padding: 5rem 3.5rem;
+                    flex-shrink: 0;
+                    border-radius: 1rem;
+                    background: #FFF;
+                    backdrop-filter: blur(52.5px);
+
+                    &-item {
+                        // background-color: purple;
+                        padding: 2rem 2rem;
+                        border-radius: 0.5rem;
+                        border: 3px dashed #000;
+                        text-align: center;
+
+                        &-img {
+                            margin-bottom: 0.5rem;
+                        }
+                        &-text {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+            &--button {
+                text-align: center;
+                margin: 2rem 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .upload {
+        // background-color: green;
+        margin-bottom: 6rem;
+    
+        &__container {
+
+            &---text {
+                // width: 40%;
+
+                &--texthead {
+                    font-size: 2.7rem;
+                    line-height: 3.5rem; /* 120% */
+                }
+                &--paragraph {
+                    font-size: 1.05rem;
+                    line-height: 1.4375rem; /* 155% */
+                }
+            }
+            &---shape {
+    
+                &--column {
+                    gap: 1rem;
+                    &-box {
+                        padding: 4rem 2rem;
+    
+                        &-item {
+                            padding: 1.5rem 1.5rem;
+                            a {
+                                svg {
+                                    width: 66px;
+                                    height: 66px;
+                                }
+                            
+                            }
+                        }
+                    }
+                    &--button {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .upload {
+        margin-bottom: 4rem;   
+        &__container {
+            flex-direction: column;
+            &---text {
+                width: 85%;
+                margin-bottom: 0.5rem;
+                &--texthead {
+                }
+                &--paragraph {
+                }
+            }
+            &---shape {
+                width: 95%;                
+                &--column {
+                    margin-top: 0.5rem;
+                    justify-content: space-evenly;
+                    &-box {
+                        padding: 3rem 2rem;    
+                        &-item {
+                            padding: 1.5rem 1.5rem;    
+                            a { 
+                                svg {
+
+                                }
+                            }
+                        }
+                    }
+                }               
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .upload {
+        margin-bottom: 2rem;
+        &__container {
+            border-radius: 0;
+            &---text {
+                width: 95%;
+                &--texthead {
+
+                }
+                &--paragraph {
+                }
+            }
+            &---shape {                
+                width: 100%;               
+                &--column {
+                    width: 95%;
+                    flex-direction: row-reverse;
+                    &-box {
+                        padding: 2.5rem 1.5rem;   
+                        &-item {
+                            padding: 0.5rem 0.5rem;    
+                            a {
+                                svg {
+                                    height: 50px;
+                                    width: 50px;
+                                }
+                            }
+                            &-text {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+                &--button {
+                    font-size: 0.8rem;
+                }               
+            }
+        }
+    }
+}
